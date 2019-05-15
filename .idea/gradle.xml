@@ -8,7 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/activityviewbackhometest" />
+            <option value="$PROJECT_DIR$/baseactivity" />
             <option value="$PROJECT_DIR$/jsontest" />
+            <option value="$PROJECT_DIR$/viewgrouptest" />
+            <option value="$PROJECT_DIR$/webviewtest" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
