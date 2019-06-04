@@ -1,7 +1,5 @@
 package com.zhaozi.jsontest;
 
-import android.os.Parcelable;
-
 import java.io.Serializable;
 import java.util.List;
 import java.util.Objects;

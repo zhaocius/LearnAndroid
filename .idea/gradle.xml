@@ -3,15 +3,24 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="D:/android/gradle-4.10-all/gradle-4.10" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/activityviewbackhometest" />
+            <option value="$PROJECT_DIR$/aidltest" />
             <option value="$PROJECT_DIR$/baseactivity" />
+            <option value="$PROJECT_DIR$/contentprovidertest" />
+            <option value="$PROJECT_DIR$/imagecache" />
             <option value="$PROJECT_DIR$/jsontest" />
-            <option value="$PROJECT_DIR$/viewgrouptest" />
+            <option value="$PROJECT_DIR$/listviewtest" />
+            <option value="$PROJECT_DIR$/localbroadcast" />
+            <option value="$PROJECT_DIR$/mvptest" />
+            <option value="$PROJECT_DIR$/mvvmtest" />
+            <option value="$PROJECT_DIR$/nettytest" />
+            <option value="$PROJECT_DIR$/pressscreentest" />
             <option value="$PROJECT_DIR$/webviewtest" />
           </set>
         </option>
