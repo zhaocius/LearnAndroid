@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/aidltest" />
             <option value="$PROJECT_DIR$/baseactivity" />
             <option value="$PROJECT_DIR$/contentprovidertest" />
+            <option value="$PROJECT_DIR$/databindingtest" />
             <option value="$PROJECT_DIR$/imagecache" />
             <option value="$PROJECT_DIR$/jsontest" />
             <option value="$PROJECT_DIR$/listviewtest" />
