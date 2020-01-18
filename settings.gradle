@@ -1,1 +1,1 @@
-include ':jsontest', ':activityviewbackhometest', ':baseactivity', ':webviewtest', ':listviewtest', ':localbroadcast', ':mvptest', ':pressscreentest', ':nettytest', ':imagecache', ':contentprovidertest', ':aidltest', ':mvvmtest', ':databindingtest'
+include ':webviewtest',':pressscreentest',  ':imagecache', ':contentprovidertest', ':aidltest',  ':databindingtest', ':boardtest', ':jumper'

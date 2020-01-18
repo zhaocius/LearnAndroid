@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HisenseMeetingBoard</string>
+    <string name="title_activity_board">BoardActivity</string>
+    <string name="button_draw">DRAW</string>
+    <string name="button_erase">ERASE</string>
+    <string name="button_clean">CLEAN</string>
+    <string name="button_pen">笔</string>
+    <string name="button_color">色</string>
+</resources>
