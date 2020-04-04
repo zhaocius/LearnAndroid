@@ -36,9 +36,9 @@ public class ImagePresenter extends BasePresenter<ImagePresenter.BgImageViewUI,I
 
             @Override
             public void onDraw(Canvas canvas) {
-                canvas.drawCircle(Utils.getInstance().getPoints()[0].x,Utils.getInstance().getPoints()[0].y,200,paint);
+                canvas.drawCircle(Utils.getInstance().getPoints()[0].x,Utils.getInstance().getPoints()[0].y,100,paint);
                 changeColor();
-                canvas.drawCircle(Utils.getInstance().getPoints()[1].x,Utils.getInstance().getPoints()[1].y,200,paint);
+                canvas.drawCircle(Utils.getInstance().getPoints()[1].x,Utils.getInstance().getPoints()[1].y,100,paint);
                 changeColor();
 
             }

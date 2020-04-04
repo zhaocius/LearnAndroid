@@ -12,10 +12,7 @@ import com.zhaocius.boardtest.myinterface.MainPresenter;
 
 public class BoardApplication extends Application {
     private static final String TAG = "BoardApplication";
-    private WindowManager.LayoutParams mWindowParams=new WindowManager.LayoutParams();
-    public WindowManager.LayoutParams getWindowParams(){
-        return mWindowParams;
-    }
+
     private static MainPresenter mMainPresenter=null;
     @Override
     public void onCreate(){

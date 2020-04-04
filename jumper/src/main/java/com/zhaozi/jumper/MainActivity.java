@@ -3,6 +3,7 @@ package com.zhaozi.jumper;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.animation.Animation;
@@ -27,7 +28,7 @@ public class MainActivity extends Activity implements MainPresenter.MainActivity
     private FrameLayout mFrameLayout;
     private MoveImageView mMoveImageView;
     private TextView mCurrentScore,mHighScore;
-    private FrameLayout.LayoutParams moveImageParams=new FrameLayout.LayoutParams(200,200);
+    private FrameLayout.LayoutParams moveImageParams=new FrameLayout.LayoutParams(100,100);
 
 
     @Override
@@ -43,14 +44,14 @@ public class MainActivity extends Activity implements MainPresenter.MainActivity
     private void initViews(){
         mFrameLayout=findViewById(R.id.framelayout);
         mBgImageView=findViewById(R.id.imageview);
-        mBgImageView.setBackground(getDrawable(R.mipmap.ic_launcher));
+        mBgImageView.setBackgroundColor(Color.YELLOW);
         mCurrentScore=findViewById(R.id.current_score);
         mHighScore=findViewById(R.id.high_score);
         mHighScore.setText(""+DataManager.getInstance().getHighScore());
         mCurrentScore.setText(""+score);
         mMoveImageView=new MoveImageView(this);
-        moveImageParams.leftMargin=200;
-        moveImageParams.topMargin=200;
+        moveImageParams.leftMargin=100;
+        moveImageParams.topMargin=100;
         mMoveImageView.setLayoutParams(moveImageParams);
         mMoveImageView.setBackground(getDrawable(R.mipmap.ln));
         mFrameLayout.addView(mMoveImageView);
@@ -127,8 +128,8 @@ public class MainActivity extends Activity implements MainPresenter.MainActivity
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        moveImageParams.leftMargin=200;
-                        moveImageParams.topMargin=200;
+                        moveImageParams.leftMargin=100;
+                        moveImageParams.topMargin=100;
                         mMoveImageView.setLayoutParams(moveImageParams);
                         Utils.getInstance().initPoints();
                         MyApplication.getMainPresenter().onInited();

@@ -1,1 +1,1 @@
-include ':webviewtest',':pressscreentest',  ':imagecache', ':contentprovidertest', ':aidltest',  ':databindingtest', ':boardtest', ':jumper'
+include ':boardtest', ':jumper'

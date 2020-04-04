@@ -38,9 +38,9 @@ public class Utils implements Scream {
 
     }
     public void initPoints(){
-        pointPos[0]=new Point(300,300);
-        pointPos[1]=new Point(800,800);
-        pointPos[2]=new Point(300,300);
+        pointPos[0]=new Point(150,150);
+        pointPos[1]=new Point(500,500);
+        pointPos[2]=new Point(150,150);
     }
 
     public  double calculateDis(Point point1, Point point2){

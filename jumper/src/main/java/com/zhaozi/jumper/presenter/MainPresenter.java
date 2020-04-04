@@ -24,16 +24,16 @@ public class MainPresenter extends BasePresenter<MainPresenter.MainActivityUI,Ma
             @Override
             public boolean checkPosition() {
                 Log.d("zztest"," 设置后的moveImage的x "+Utils.getInstance().getPoints()[2].x);
-                return Utils.getInstance().calculateDis(Utils.getInstance().getPoints()[toSecond?1:0],Utils.getInstance().getPoints()[2])<100;
+                return Utils.getInstance().calculateDis(Utils.getInstance().getPoints()[toSecond?1:0],Utils.getInstance().getPoints()[2])<50;
             }
 
             @Override
             public void refreshBg(){
                 int tempx,tempy;
                 do {
-                    tempx = random.nextInt(width - 400)+200;
-                    tempy=  random.nextInt(width - 400)+200;
-                }while(Utils.getInstance().calculateDis(new Point( tempx,tempy),Utils.getInstance().getPoints()[toSecond?1:0])<700);
+                    tempx = random.nextInt(width - 200)+100;
+                    tempy=  random.nextInt(height - 200)+100;
+                }while(Utils.getInstance().calculateDis(new Point( tempx,tempy),Utils.getInstance().getPoints()[toSecond?1:0])<300);
                 Utils.getInstance().getPoints()[toSecond?0:1].set(tempx,tempy);
                 Log.d("zztest","xin point" +Utils.getInstance().getPoints()[0]);
                 MyApplication.getImagePresenter().invalidateSelf();

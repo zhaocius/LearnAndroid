@@ -24,10 +24,17 @@ public class PenToolView extends ImageView implements PenToolViewPresenter.PenTo
     private float mStartY;
     private static final String TAG = "PenToolView";
     private OnClickListener mOnClickListener;
-    private WindowManager mWindowManager = (WindowManager) getContext().getApplicationContext().getSystemService(Context.WINDOW_SERVICE);
     //此windowmanagerparams变量为获取的全局变量，用于保存悬浮笔工具的属性
-    public WindowManager.LayoutParams mWindowParams = ((BoardApplication) getContext().getApplicationContext()).getWindowParams();
 
+    public interface OnPostionChangeListener{
+        void onPositionChanged(float x , float y);
+    }
+
+    private OnPostionChangeListener onPostionChangeListener;
+
+    public void setOnPostionChangeListener(OnPostionChangeListener onPostionChangeListener){
+        this.onPostionChangeListener=onPostionChangeListener;
+    }
 
     private PenToolViewPresenter.PenToolViewPresenterUICallback mCallback;
     public PenToolView(Context context) {
@@ -50,7 +57,9 @@ public class PenToolView extends ImageView implements PenToolViewPresenter.PenTo
                 mCallback.call();
                 break;
             case MotionEvent.ACTION_MOVE:
-                updateViewPosition();
+                if(onPostionChangeListener!=null){
+                    onPostionChangeListener.onPositionChanged(x - mTouchX,y - mTouchY);
+                }
                 break;
             case MotionEvent.ACTION_UP:
                 mTouchX = mTouchY = 0;
@@ -72,15 +81,6 @@ public class PenToolView extends ImageView implements PenToolViewPresenter.PenTo
         this.mOnClickListener = onclickListener;
 
     }
-
-    public void updateViewPosition() {   //更新位置
-
-        mWindowParams.x = (int) (x - mTouchX);
-        mWindowParams.y = (int) (y - mTouchY);
-        //首先更新按钮位置
-        mWindowManager.updateViewLayout(this, mWindowParams);
-    }
-
 
     @Override
     public void setCallback(PenToolViewPresenter.PenToolViewPresenterUICallback callback) {

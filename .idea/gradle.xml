@@ -3,20 +3,14 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="$PROJECT_DIR$/../gradle-4.10" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../gradle-4.10" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/aidltest" />
             <option value="$PROJECT_DIR$/boardtest" />
-            <option value="$PROJECT_DIR$/contentprovidertest" />
-            <option value="$PROJECT_DIR$/databindingtest" />
-            <option value="$PROJECT_DIR$/imagecache" />
             <option value="$PROJECT_DIR$/jumper" />
-            <option value="$PROJECT_DIR$/pressscreentest" />
-            <option value="$PROJECT_DIR$/webviewtest" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
