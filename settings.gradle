@@ -1,1 +1,1 @@
-include ':boardtest', ':jumper'
+include ':whiteboard', ':jumper'
