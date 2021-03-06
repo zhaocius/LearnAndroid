@@ -1,1 +1,1 @@
-include ':whiteboard', ':jumper', ':opencvlib'
+include ':whiteboard', ':jumper', ':opencvlib', ':opencllib'
